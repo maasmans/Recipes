@@ -1,0 +1,3 @@
+CREATE SEQUENCE recipe_seq START WITH 1 INCREMENT BY 1;
+
+ALTER TABLE recipe ALTER COLUMN id SET DEFAULT nextval('recipe_seq');
