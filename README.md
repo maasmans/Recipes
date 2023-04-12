@@ -1,4 +1,4 @@
-#Objective
+# Objective
 Create a standalone java application which allows users to manage their favourite recipes. It should
 allow adding, updating, removing and fetching recipes. Additionally users should be able to filter
 available recipes based on one or more of the following criteria:
@@ -14,7 +14,7 @@ available recipes based on one or more of the following criteria:
    Please ensure that we have some documentation about the architectural choices and also how to
    run the application. The project is expected to be delivered as a GitHub (or any other public git
    hosting) repository URL.
-##All these requirements needs to be satisfied:
+## All these requirements needs to be satisfied:
 1. It must be a REST application implemented using Java (use a framework of your choice)
 2. Your code should be production-ready.
 3. REST API must be documented
@@ -22,7 +22,7 @@ available recipes based on one or more of the following criteria:
 5. Unit tests must be present
 6. Integration tests must be present
 
-##Notes about the application
+## Notes about the application
 This application uses the Spring Boot framework for quick and safe environment configuration with minimal boilerplate code. 
 The database is Postgres, a popular open-source relational database. 
 JPA with Hibernate implementation is used for persistence implement standard CRUD operations as seen in the repository classes. 
