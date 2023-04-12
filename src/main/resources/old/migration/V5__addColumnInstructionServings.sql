@@ -1,3 +1,0 @@
-ALTER TABLE recipe
-ADD COLUMN servings SMALLINT,
-ADD COLUMN instructions TEXT;
