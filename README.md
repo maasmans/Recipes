@@ -28,6 +28,7 @@ The database is Postgres, a popular open-source relational database.
 JPA with Hibernate implementation is used for persistence implement standard CRUD operations as seen in the repository classes. 
 Flyway manages database migrations for easy updating between versions within a Java application. 
 The database is containerized for portability across environments.
+For locally testing the api swagger can be accessed through http://localhost:8080/swagger-ui once the application is running.
 
 ### How to run the application
 Environment requirements for running the application: Maven, docker, java 17 installed. 
