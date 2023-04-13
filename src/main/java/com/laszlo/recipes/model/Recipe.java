@@ -1,5 +1,6 @@
 package com.laszlo.recipes.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.laszlo.recipes.service.RecipeService;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -61,6 +62,7 @@ public class Recipe {
 
     @Builder.Default
     @OneToMany(mappedBy = "recipe", orphanRemoval = true, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JsonManagedReference
     private List<Ingredient> ingredients = new ArrayList<>();
 
 }

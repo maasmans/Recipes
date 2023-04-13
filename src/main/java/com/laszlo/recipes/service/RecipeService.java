@@ -16,12 +16,14 @@ import java.util.regex.Pattern;
 @RequiredArgsConstructor
 public class RecipeService {
     private final RecipeRepository recipeRepository;
+    private final IngredientService ingredientService;
 
     public Collection<Recipe> findAll() {
         return recipeRepository.findAll();
     }
 
     public Recipe save(Recipe newRecipe) {
+        newRecipe.getIngredients().forEach(ingredient -> ingredient.setRecipe(newRecipe));
         return recipeRepository.save(newRecipe);
     }
 

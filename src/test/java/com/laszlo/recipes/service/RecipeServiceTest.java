@@ -22,11 +22,13 @@ class RecipeServiceTest {
 
     /* Dependencies. */
     private RecipeRepository recipeRepository;
+    private IngredientService ingredientService;
 
     @BeforeEach
     void setUp(){
         recipeRepository = Mockito.mock(RecipeRepository.class);
-        recipeService = new RecipeService(recipeRepository);
+        ingredientService = Mockito.mock(IngredientService.class);
+        recipeService = new RecipeService(recipeRepository, ingredientService);
     }
 
     @Test
